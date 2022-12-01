@@ -1,0 +1,87 @@
+import bcrypt from 'bcryptjs';
+
+const data =  {
+    cart: [],
+    buyer: [],
+    orders: [],
+    users:[
+        {
+            name: "Efrael",
+            email: "admin@example.com",
+            password: bcrypt.hashSync('123456'),
+            isAdmin: true,
+        },
+        {
+            name: "Junior",
+            email: "user@example.com",
+            password: bcrypt.hashSync('123456'),
+            isAdmin: false,
+        }
+    ],
+    products: [
+        {   
+            //_id: '1',
+            "title": "Chompa rays baby alpaca",
+            "slug": "Chompa-rays-baby-alpaca",
+            "category":"niño",
+            "price": 70,
+            "stock":0,
+            "numReviews":10,
+            "rating": 4.5,
+            "description": "Best Sellers, Chompas y Sweaters",
+            "img": "https://ibb.co/KXYcn55",
+            "talla": "S",
+        },
+        {
+            // _id: '2',
+            "title": "Bufanda de alpaca bouclé verde",
+            "slug": "Bufanda-de-alpaca-bouclé-verde",
+            "category":"adulto",
+            "price": 54,
+            "stock":12,
+            "numReviews":12,
+            "rating": 4.5,
+            "description": "Bufanda de Alpaca bouclé turquesa, tejida artesanalmente por Edmundo en la región de Huancavelica en Perú.",
+            "img": "https://cdn.shopify.com/s/files/1/0533/3434/3870/products/SCARF1C-TU.jpg?v=1654943683&width=360",
+            "talla": "28",
+        }, {
+            // _id: '3',
+            "title": "Bufanda de pelo del alpaca",
+            "slug": "Bufanda-de-pelo-del-alpaca",
+            "category":"niño",
+            "price": 85,
+            "stock":9,
+            "numReviews":9,
+            "rating": 4.5,
+            "description": "Bufandas de pelo de alpaca están fabricado con pelo de alpaca natural .",
+            "img": "https://cdn.shopify.com/s/files/1/0533/3434/3870/collections/1823597b6f00636056048a48b10acfc9.jpg?v=1617097220&width=535",
+            "talla": "M",
+        }, {
+            // _id: '4',
+            "title": "Bufanda de alpaca bouclé beige",
+            "slug": "Bufanda-de-alpaca-bouclé-beige",
+            "category":"adulto",
+            "price": 90,
+            "stock":12,
+            "numReviews":12,
+            "rating": 5,
+            "description": "Bufanda de Alpaca bouclé beige fabricada artesanalmente en telar en lana de alpaca.",
+            "img": "https://cdn.shopify.com/s/files/1/0533/3434/3870/products/SCARF1C-BE.jpg?v=1617097296&width=360",
+            "talla": "14",
+        }, {
+            // _id: '5',
+            "title": "Manta baby alpaca structured",
+            "slug": "manta-baby-alpaca-structured",
+            "description": "Suave manta en tonos neutros combinará perfectamente con la decoración de tu hogar,",
+            "category":"niño",
+            "price": 120,
+            "stock":10,
+            "numReviews":6,
+            "rating": 4,
+            "img": "https://solalpaca.pe/wp-content/uploads/2022/06/40103-02_c003-1-uai-516x607.jpg",
+            "talla": "12",
+        },
+    ],
+};
+
+export default data;
