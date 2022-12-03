@@ -35,5 +35,5 @@ app.use((err, req, res, next) =>{
     res.status(500).send({message: err.message});
 })
 
-const port = process.env.PORT || process.env.MONGODB_URI;
+const port = process.env.PORT || 5000;
 
